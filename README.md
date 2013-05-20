@@ -28,6 +28,7 @@ func main() {
  
 #### 2. Adding basic templates
 
+main.go
 ```go
 package main
 

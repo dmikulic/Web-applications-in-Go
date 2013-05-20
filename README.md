@@ -55,3 +55,33 @@ func main() {
         }
 }
 ```
+
+templates/_base.html
+```html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{{ template "title" . }}</title>
+    </head>
+    <body>
+        <section id="contents">
+            {{ template "content" . }}
+        </section>
+        <footer id="footer">
+            My site - 2013
+        </footer>
+    </body>
+</html>
+```
+
+templates/index.html
+```html
+<!DOCTYPE html>
+{{ define "title" }}Index page{{ end }}
+
+{{ define "content" }}
+    <h1>Index page</h1>
+    <hr/>
+    <h3>Some content</h3>
+{{ end }}
+```

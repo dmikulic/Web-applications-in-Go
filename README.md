@@ -76,7 +76,6 @@ templates/_base.html
 
 templates/index.html
 ```html
-<!DOCTYPE html>
 {{ define "title" }}Index page{{ end }}
 
 {{ define "content" }}

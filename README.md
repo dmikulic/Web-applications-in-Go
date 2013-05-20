@@ -4,6 +4,8 @@ Web applications in Go
 This intro consists mostly of examples which show how to do it.
 
 #### 1. Hello world
+
+main.go
  ```go
 package main
 
